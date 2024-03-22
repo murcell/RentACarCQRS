@@ -28,7 +28,8 @@ public static class ApplicationServiceRegistration
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         services.AddSubClassesOfType(Assembly.GetExecutingAssembly(), typeof(BaseBusinesRules));
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-        services.AddSingleton<LoggerServiceBase, FileLogger>(); // dosya yerine başka bir yere yazmak istediğimizde burayı değiştir
+        //services.AddSingleton<LoggerServiceBase, FileLogger>(); // dosya yerine başka bir yere yazmak istediğimizde burayı değiştir
+        services.AddSingleton<LoggerServiceBase, MsSqlLogger>();
         return services;
     }
 
