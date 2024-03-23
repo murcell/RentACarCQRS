@@ -3,7 +3,7 @@ using Domain.Entities;
 
 namespace Application.Services.Repositories;
 
-public interface ICarRepository : IAsyncRespository<Car, Guid>, IRespository<Car, Guid>
+public interface ICarRepository : IAsyncRepository<Car, Guid>, IRepository<Car, Guid>
 {
 
 }

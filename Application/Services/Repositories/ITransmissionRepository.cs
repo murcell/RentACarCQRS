@@ -3,7 +3,7 @@ using Domain.Entities;
 
 namespace Application.Services.Repositories;
 
-public interface ITransmissionRepository : IAsyncRespository<Transmission, Guid>, IRespository<Transmission, Guid>
+public interface ITransmissionRepository : IAsyncRepository<Transmission, Guid>, IRepository<Transmission, Guid>
 {
 
 }
